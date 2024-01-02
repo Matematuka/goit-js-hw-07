@@ -6,6 +6,7 @@
 
 const categories = document.querySelectorAll(".item");
 console.log(`Number of categories: ${categories.length}`);
+
 const firstCategory = document.querySelector(".item");
 const nameOfFirstCategory = firstCategory.firstElementChild.textContent;
 console.log(`Category: ${nameOfFirstCategory}`);

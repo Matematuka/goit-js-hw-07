@@ -29,8 +29,6 @@ const images = [
 ]; 
 
 const imagesList = document.querySelector(".gallery");
-
-
 const markup = images.map(imageTemplate).join('\n\n');  
  imagesList.insertAdjacentHTML("afterbegin", markup);
  
