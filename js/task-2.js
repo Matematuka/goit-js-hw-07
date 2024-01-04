@@ -38,11 +38,6 @@ const markup = images.map(imageTemplate).join('\n\n');
   return  `<li><img src="${src}" alt="${alt}" /></li>`;
  }
 
-const imgElements = document.querySelectorAll(".gallery li");
-for (let item of imgElements) {
-  item.classList.add("img-item");
-}
-
 const pictures = document.querySelectorAll(".gallery img");
 for (let item of pictures) {
   item.setAttribute("width", "360px");

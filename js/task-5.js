@@ -17,6 +17,8 @@ btn.addEventListener("click", handleClick);
 
 function handleClick(evt) {
   bodyElem.style.backgroundColor = getRandomHexColor();
-  textSpan.textContent = getRandomHexColor();
+  textSpan.textContent = getRandomHexColor(bodyElem);
 }
 
+const text = document.querySelector(".widget p");
+text.classList.add("hex-color");

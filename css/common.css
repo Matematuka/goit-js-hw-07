@@ -12,7 +12,7 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-ul {
+ul, li {
   list-style: none;
 }
 
@@ -79,21 +79,15 @@ border: 1px solid #808080;
 }
 .gallery {
 display: flex;
-height: 848px;
-padding: 100px 156px;
+width: 1440px;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-items: flex-start;
 background: #FFF;
-column-gap: 24px;
 row-gap: 48px;
+column-gap: 24px;
 } 
-
-.img-item {
-display: flex;
-flex-basis: calc((100% - 96px) / 6);
-}
 
 #name-input {
   font-family: Montserrat;
@@ -161,6 +155,15 @@ letter-spacing: 0.96px;
   padding: 8px;
 }
 
+.form-input:hover,
+.form-input:focus {
+  border-color: #000;
+}
+
+.form-input:active {
+  border-color: #2E2F42;
+}
+
 .form-lable {
   color: #2E2F42;
   font-family: Montserrat;
@@ -188,7 +191,45 @@ letter-spacing: 0.96px;
   background: #4E75FF;
   border: none; 
 }
-#boxes {
-width: 30px;
-height: 30px;
+
+.form-btn:hover {
+  background: #6C8CFF;
+}
+
+.widget {
+display: inline-flex;
+padding: 100px 88px;
+flex-direction: column;
+align-items: center
+gap: 16px;
+border-radius: 8px;
+background: #FFF;
+}
+
+.hex-color {
+color: #2E2F42;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.64px;
+} 
+
+.change-color {
+display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background: #4E75FF;
+border: none;
+color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.64px;
 }
