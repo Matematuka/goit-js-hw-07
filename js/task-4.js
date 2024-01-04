@@ -25,4 +25,14 @@ function handleSubmit(evt) {
     evt.target.reset();
 }
 
+const formInputs = document.querySelectorAll("input");
+for (let item of formInputs) {
+  item.classList.add("form-input");
+}
+const formLables = document.querySelectorAll("lable");
+for (let item of formLables) {
+  item.classList.add("form-lable");
+}
+const button = document.querySelector("button");
+button.classList.add("form-btn");
   
