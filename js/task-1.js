@@ -7,7 +7,6 @@
 const categories = document.querySelectorAll(".item");
 console.log(`Number of categories: ${categories.length}`);
 
-    
 categories.forEach((el) => {
     const title = el.querySelector("h2").textContent;
     const content = el.querySelectorAll("li").length;
@@ -15,43 +14,18 @@ categories.forEach((el) => {
     console.log(`Elements: ${content}`);
 });
 const headOfCategories = document.querySelectorAll("h2");
-
 for(let item of headOfCategories) {
     item.classList.add("js-categories");   
 }
 const boxes = document.querySelectorAll(".item ul");
-
 for (let item of boxes) {
     item.classList.add("js-box");
 }
-
 const elementsList = document.querySelectorAll(".item li");
-
-
 for (let item of elementsList) {
-   item.classList.add("js-list-elem");
+    item.classList.add("js-list-elem");
 }
 
-
-// const nameOfFirstCategory = firstCategory.firstElementChild.textContent;
-// console.log(`Category: ${nameOfFirstCategory}`);
-// const animals = firstCategory.lastElementChild;
-// const animalsCount = animals.childElementCount;
-// console.log(`Elements: ${animalsCount}`);
-
-// const secondCategory = firstCategory.nextElementSibling;
-// const nameOfSecondCategory = secondCategory.firstElementChild.textContent;
-// console.log(`Category: ${nameOfSecondCategory}`);
-// const products = secondCategory.lastElementChild;
-// const productsCount = products.childElementCount;
-// console.log(`Elements: ${productsCount}`);
-
-// const thirdCategory = secondCategory.nextElementSibling;
-// const nameOfThirdCategory = thirdCategory.firstElementChild.textContent;
-// console.log(`Category: ${nameOfThirdCategory}`);
-// const technologies = thirdCategory.lastElementChild;
-// const technologiesCount = technologies.childElementCount;
-// console.log(`Elements: ${technologiesCount}`);
 
 
 

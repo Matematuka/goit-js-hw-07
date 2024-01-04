@@ -35,5 +35,16 @@ const markup = images.map(imageTemplate).join('\n\n');
  function imageTemplate(image) {
   const src = image.url;
   const alt = image.alt;
-   return  `<li><img src="${src}" alt="${alt}" /></li>`;
+  return  `<li><img src="${src}" alt="${alt}" /></li>`;
  }
+
+const imgElements = document.querySelectorAll(".gallery li");
+for (let item of imgElements) {
+  item.classList.add("img-item");
+}
+
+const pictures = document.querySelectorAll(".gallery img");
+for (let item of pictures) {
+  item.setAttribute("width", "360px");
+  item.setAttribute("height", "300px");
+}

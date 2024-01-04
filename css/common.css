@@ -78,12 +78,22 @@ border: 1px solid #808080;
 
 }
 .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  
+display: flex;
+height: 848px;
+padding: 100px 156px;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+background: #FFF;
+column-gap: 24px;
+row-gap: 48px;
 } 
+
+.img-item {
+display: flex;
+flex-basis: calc((100% - 96px) / 6);
+}
 
 #boxes {
 width: 30px;
