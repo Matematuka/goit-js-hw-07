@@ -35,40 +35,44 @@
 //   evt.target.reset();
 //  }
 
-const num = document.querySelector("input");
-const btnCreate = controls.querySelector("button[data-create]");
-const btnDestroy = controls.querySelector("button[data-destroy]");
+
+const createBtn = controls.querySelector("button[data-create]");
+const destroyBtn = controls.querySelector("button[data-destroy]");
+const myInput = document.querySelector("input");
 const boxes = document.querySelector("#boxes");
-btnCreate.addEventListener("click", () => {
-  let amount = num.value;
+createBtn.classList.add("create-btn");
+destroyBtn.classList.add("destroy-btn");
+myInput.classList.add("js-input");
+createBtn.addEventListener("click", () => {
+  let amount = myInput.value;
   createBoxes(amount);
 });
 function createBoxes(amount) {
-  let wid = 30;
-  let hig = 30;
-  let a = 1;
+  let w = 30;
+  let h = 30;
+  let step = 1;
   destroyBoxes();
   const fragment = document.createDocumentFragment();
   if (amount >= 1 && amount <= 100) {
     for (let i = 0; i < amount; i++) {
       if (i > 0) {
-        wid += 10;
-        hig += 10;
-        a += 1;
+        w += 10;
+        h += 10;
+        step += 1;
       }
       let item = document.createElement("div");
-      item.style.width = wid + "px";
-      item.style.height = hig + "px";
-      item.textContent = a;
+      item.style.width = w + "px";
+      item.style.height = h + "px";
+      item.textContent = step;
       item.style.textAlign = "center";
       item.style.backgroundColor = getRandomHexColor();
       fragment.appendChild(item);
     }
     boxes.appendChild(fragment);
   }
-  num.value = "";
+  myInput.value = "";
 }
-btnDestroy.addEventListener("click", () => {
+destroyBtn.addEventListener("click", () => {
   destroyBoxes();
 });
 function destroyBoxes() {
