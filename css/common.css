@@ -299,7 +299,7 @@ letter-spacing: 0.64px;
   width: 120px;
   padding: 8px 16px;
   justify-content: center;
-  align-items: center;
+  align-items.destroy-btn: center;
   border-radius: 8px;
   background: #FF4E4E;
   border: none;
@@ -310,4 +310,12 @@ letter-spacing: 0.64px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+}
+
+.create-btn:hover {
+  background-color: #6C8CFF;
+}
+
+.destroy-btn:hover {
+  background-color: #FF7070;
 }
