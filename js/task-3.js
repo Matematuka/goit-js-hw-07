@@ -2,9 +2,9 @@ const textInput = document.querySelector("#name-input");
 const greet = document.querySelector("#name-output");
 textInput.addEventListener("input", (evt) => {
     if (evt.currentTarget.value.trim() === "") {
-        greet.textContent === "Anonymous";
+        greet.textContent = "Anonymous";
     } else {
-        greet.textContent = evt.currentTarget.value.trim();   
+        greet.textContent = evt.currentTarget.value.trim();
     }
 });
 

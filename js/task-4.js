@@ -20,9 +20,12 @@ function handleSubmit(evt) {
     const password = evt.target.elements.password.value.trim();
     if (email === "" || password === "") {
       alert("All form fields must be filled in");
+
+    } else {
+      console.log(`Email: ${email}, Password: ${password}`);
+      evt.target.reset();
     }
-    console.log(`Email: ${email}, Password: ${password}`);
-    evt.target.reset();
+    
 }
 
 const formInputs = document.querySelectorAll("input");

@@ -16,8 +16,9 @@ const textSpan = document.querySelector("span.color");
 btn.addEventListener("click", handleClick);
 
 function handleClick(evt) {
-  bodyElem.style.backgroundColor = getRandomHexColor();
-  textSpan.textContent = getRandomHexColor(bodyElem);
+  const changeColor = getRandomHexColor();
+  bodyElem.style.backgroundColor = changeColor;
+  textSpan.textContent = changeColor;
 }
 
 const text = document.querySelector(".widget p");
