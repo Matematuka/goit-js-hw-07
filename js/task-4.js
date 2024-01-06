@@ -22,7 +22,7 @@ function handleSubmit(evt) {
       alert("All form fields must be filled in");
 
     } else {
-      console.log(`Email: ${email}, Password: ${password}`);
+      console.log({ Email: email, Password: password });
       evt.target.reset();
     }
     
